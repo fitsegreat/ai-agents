@@ -3,7 +3,9 @@
   "packages": ["python313packages.uv@latest"],
   "shell": {
     "init_hook": [
-      "source .venv/bin/activate"
+      "uv venv",
+      "source .venv/bin/activate",
+      "uv sync"
     ],
     "scripts": {
       "test": [
